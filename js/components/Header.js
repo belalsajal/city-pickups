@@ -2,6 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../app';
 
+// Detect if we're running in production (GitHub Pages) or development
+const isProduction = window.location.hostname !== 'localhost' && 
+                    !window.location.hostname.includes('127.0.0.1');
+
+// Set the correct image path based on environment
+const logoPath = isProduction ? './assets/images/logo.svg' : './public/assets/images/logo.svg';
+
 export const Header = () => {
   const { isAuthenticated, user, dispatch } = useAuth();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,7 +53,7 @@ export const Header = () => {
               aria-label="Go to homepage"
             >
               <img 
-                src="./public/assets/images/logo.svg" 
+                src={logoPath} 
                 alt="City Pickups" 
                 className="h-20 w-auto"
               />
@@ -54,9 +61,9 @@ export const Header = () => {
           ) : (
             <Link to="/" className="flex items-center ml-4">
               <img 
-                src="./public/assets/images/logo.svg" 
+                src={logoPath} 
                 alt="City Pickups" 
-                className="h-20 w-auto"
+                className="h-16 w-auto"
               />
             </Link>
           )}
