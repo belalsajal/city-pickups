@@ -46,7 +46,7 @@ export const Header = () => {
               aria-label="Go to homepage"
             >
               <img 
-                src="public/assets/images/logo.svg" 
+                src="assets/images/logo.svg" 
                 alt="City Pickups" 
                 className="h-20 w-auto"
               />
@@ -54,7 +54,7 @@ export const Header = () => {
           ) : (
             <Link to="/" className="flex items-center ml-4">
               <img 
-                src="public/assets/images/logo.svg" 
+                src="assets/images/logo.svg" 
                 alt="City Pickups" 
                 className="h-20 w-auto"
               />
