@@ -46,9 +46,9 @@ export const Header = () => {
               aria-label="Go to homepage"
             >
               <img 
-                src="./assets/images/logo.svg" 
+                src="./public/assets/images/logo.svg" 
                 alt="City Pickups" 
-                className="h-16 w-auto"
+                className="h-20 w-auto"
               />
             </div>
           ) : (
