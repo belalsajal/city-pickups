@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City Pickups | Peer-to-Peer Delivery Platform</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Inter font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  
+  <!-- Custom styling -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#008080',
+            secondary: '#F0F0F0',
+            accent: '#FFA500',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          maxWidth: {
+            container: '1280px',
+          },
+        },
+        screens: {
+          sm: '640px',
+          md: '768px',
+          lg: '1024px',
+          xl: '1280px',
+        },
+      },
+    }
+  </script>
+</head>
+<body>
+  <div id="root"></div>
+  
+  <!-- Bundle script will be included here -->
+  <script src="/dist/bundle.js"></script>
+</body>
+</html>

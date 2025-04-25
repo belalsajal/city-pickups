@@ -1,0 +1,6 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <rect width="800" height="800" fill="#FF5722"/>
+  <text x="50" y="320" font-family="Helvetica, Arial, sans-serif" font-weight="bold" font-size="140" fill="white">City</text>
+  <text x="50" y="500" font-family="Helvetica, Arial, sans-serif" font-weight="bold" font-size="140" fill="white">Pickups</text>
+</svg>

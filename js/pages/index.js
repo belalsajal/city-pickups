@@ -1,0 +1,9 @@
+// Export all page components for easy importing
+export { default as CustomerDashboard } from './CustomerDashboard.js';
+export { default as CourierDashboard } from './CourierDashboard.js';
+export { default as Dashboard } from './Dashboard.js';
+export { default as ProfileCard } from './ProfileCard.js';
+export { default as LandingPage } from './LandingPage.js';
+export { default as LoginPage } from './LoginPage.js';
+export { default as AboutPage } from './AboutPage.js';
+export { default as ContactPage } from './ContactPage.js';
