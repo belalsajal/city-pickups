@@ -1,12 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
-// Detect if we're running in production (GitHub Pages) or development
-const isProduction = window.location.hostname !== 'localhost' && 
-                    !window.location.hostname.includes('127.0.0.1');
-
-// Set the correct image path based on environment
-const heroImagePath = isProduction ? './assets/images/hero-background.jpg' : './public/assets/images/hero-background.jpg';
+import { getAssetPath } from '../utils/imagePaths';
 
 // LandingPage component
 export default function LandingPage() {
@@ -71,7 +65,7 @@ export default function LandingPage() {
             {/* Hero image */}
             <div className="hidden md:block">
               <img 
-                src={heroImagePath} 
+                src={getAssetPath('hero-background.jpg')} 
                 alt="City Pickups couriers delivering in Berlin" 
                 className="rounded-lg shadow-2xl"
                 onError={(e) => {

@@ -1,12 +1,16 @@
 const path = require('path');
 
+// Determine if we're in production (for GitHub Pages deployment)
+const isProduction = process.env.NODE_ENV === 'production';
+
 module.exports = {
-  mode: 'development',
+  mode: isProduction ? 'production' : 'development',
   entry: './js/app.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: './'
+    // Use different publicPath based on environment
+    publicPath: isProduction ? '/city-pickups/' : '/'
   },
   module: {
     rules: [
