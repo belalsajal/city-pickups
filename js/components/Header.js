@@ -54,9 +54,9 @@ export const Header = () => {
           ) : (
             <Link to="/" className="flex items-center ml-4">
               <img 
-                src="./assets/images/logo.svg" 
+                src="./public/assets/images/logo.svg" 
                 alt="City Pickups" 
-                className="h-16 w-auto"
+                className="h-20 w-auto"
               />
             </Link>
           )}
