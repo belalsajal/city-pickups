@@ -64,7 +64,7 @@ export default function LandingPage() {
             {/* Hero image */}
             <div className="hidden md:block">
               <img 
-                src="/public/assets/images/hero-background.jpg" 
+                src="public/assets/images/hero-background.jpg" 
                 alt="City Pickups couriers delivering in Berlin" 
                 className="rounded-lg shadow-2xl"
                 onError={(e) => {

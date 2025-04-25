@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useReducer } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 // Import components
 import { Header } from './components/Header';
@@ -67,7 +67,7 @@ export const useAuth = () => useContext(AuthContext);
 const App = () => {
   return (
     <AuthProvider>
-      <BrowserRouter>
+      <HashRouter>
         <div className="flex flex-col min-h-screen">
           <Header />
           
@@ -101,7 +101,7 @@ const App = () => {
           
           <Footer />
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </AuthProvider>
   );
 };
